@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { SeriesService } from './series.service';
 
 import { Observable } from 'rxjs';
+import { Anime } from './core/models/anime';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: String;
+  anime: Anime;
 
   constructor(
     private seriesService: SeriesService
@@ -18,8 +19,8 @@ export class AppComponent {
   }
 
   getTitle(): void{
-    this.seriesService.getTitle()
-      .subscribe(title => this.title = title);
+    this.seriesService.getAnime()
+      .subscribe(anime => this.anime = anime);
 
   }
 
