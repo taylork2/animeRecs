@@ -6,6 +6,9 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { AnimeComponent } from './anime/anime.component';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+// import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +17,8 @@ import { AnimeComponent } from './anime/anime.component';
   imports: [
     BrowserModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
   ],
   providers: [ HttpModule, HttpClientModule ],
   bootstrap: [AppComponent]
