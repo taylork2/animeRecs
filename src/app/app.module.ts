@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AnimeComponent } from './anime/anime.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-// import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatCardModule, MatGridListModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -19,6 +19,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HttpModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [ HttpModule, HttpClientModule ],
   bootstrap: [AppComponent]

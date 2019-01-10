@@ -1,3 +1,12 @@
-<img [src]= "anime.data.attributes.posterImage.small">
-<h4>{{ anime.data.attributes.canonicalTitle }} {{ anime.data.attributes.averageRating }}</h4>
-{{ anime.data.attributes.synopsis }}
+<mat-card class="anime-card" width="400px">
+    <mat-card-header>
+        <mat-card-title>{{ anime.data.attributes.canonicalTitle }}</mat-card-title>
+        <mat-card-subtitle>{{ anime.data.attributes.averageRating }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <img mat-card-img [src]="anime.data.attributes.posterImage.small">
+    <mat-card-content>
+        <p>{{ anime.data.attributes.synopsis }}</p>
+    </mat-card-content>
+</mat-card>
+

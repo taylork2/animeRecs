@@ -25,7 +25,7 @@ export class Anime {
             startDate: Date;
             posterImage: Image;
             coverImage: Image;
-
+            
         }
     };
 }
